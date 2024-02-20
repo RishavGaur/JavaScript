@@ -1,0 +1,12 @@
+.first{
+    color:chartreuse;
+    font-size:25px;
+    margin:auto;
+}
+.second{
+    background-color: cadetblue;
+    display:inline-block;
+    text-align: center;
+    margin:auto;
+    width:50%;
+}
