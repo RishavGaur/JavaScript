@@ -2,7 +2,7 @@ function vowelCount(data){
     console.log(`You've entered= ${data}`);
     data= data.toLowerCase();
     let count=0;
-    for(s of data){
+    for(let s of data){
         if(s=='a' || s=='e' || s=='i' || s=='o' || s=='u'){
             count++;
         }
