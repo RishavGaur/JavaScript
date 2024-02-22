@@ -1,9 +1,8 @@
-function vowelCount(){
-    let str= prompt("Enter String: ");
-    console.log(`You've entered= ${str}`);
-    str= str.toLowerCase();
+function vowelCount(data){
+    console.log(`You've entered= ${data}`);
+    data= data.toLowerCase();
     let count=0;
-    for(s of str){
+    for(s of data){
         if(s=='a' || s=='e' || s=='i' || s=='o' || s=='u'){
             count++;
         }
@@ -11,4 +10,4 @@ function vowelCount(){
     console.log("Numbers of Vowels in the String are= ",count);
 }
 
-vowelCount();
+vowelCount("RishavRaj");
