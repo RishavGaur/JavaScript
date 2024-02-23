@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+</head>
+<style>
+    .dropDown{
+        position:relative;
+        display:inline-block;
+    }
+    .options{
+        position:absolute;
+        display:inherit;
+        list-style-type:none;
+        min-width:120px;
+        margin-left:-30px;
+        display:none;
+    }
+    #dropBtn{
+        padding-top:1vh;
+        padding-left:1vw;
+        cursor:pointer;
+    }
+    .text{
+        background-color:rgb(215, 204, 204);
+        padding: 10px;
+        border-radius:5px;
+    }
+    li{
+        padding:15px;
+        background-color: beige;
+        cursor:pointer;
+    }
+    li:hover{
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <div class="dropDown">
+        <div id="dropBtn"><span class="text">Show Resources</span></div>
+        <ul class="options">
+            <li>English</li>
+            <li>Maths</li>
+            <li>Reasoning</li>
+            <li>G. S.</li>
+        </ul>
+    </div>
+    <script src="dropdown.js"></script>
+</body>
+</html>
