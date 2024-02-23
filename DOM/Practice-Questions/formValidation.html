@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+    }
+    form{
+        background-color: azure;
+        padding:150px;
+        text-align: center;
+        border-radius:10px;
+        box-shadow: 1px 2px 2px rgb(64, 62, 62);
+    }
+    h1{
+        margin-top:-100px;
+        padding-bottom:50px;
+        text-decoration: underline;
+    }
+    input{
+        width:250px;
+        padding:5px;
+        border:1px solid black;
+        border-radius: 5px;
+    }
+    .focus{
+        border:2px solid aquamarine;
+    }
+    button{
+        font-size:1rem;
+        padding:8px;
+        border-radius: 5px;
+        border: none;
+        background-color: aquamarine;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    p{
+        color:red;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    .error{
+        border-color:red;
+    }
+</style>
+<body>
+    <form action="" id="myForm" onsubmit="return control()">
+        <h1>SignUp</h1>
+        <div>
+            <input type="text" id="fname" name="uName" placeholder="User Name">
+            <p id="nameErr" class="all"></p>
+        </div><br>
+        <div>
+            <input type="text" id="number" name="contact" placeholder="Phone Number">
+            <p id="phoneErr" class="all"></p>
+        </div><br>
+        <div>
+            <input type="email" id="mail" name="email" placeholder="Email">
+            <p id="mailErr" class="all"></p>
+        </div><br>
+        <div>
+            <input type="password" id="pass" name="pass" placeholder="Password">
+            <p id="passErr"></p>
+        </div><br>
+        <div>
+            <input type="password" id="cpass" name="confirm" placeholder="Confirm Password">
+            <p id="cpassErr"></p>
+        </div><br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="formValidation.js"></script>
+</body>
+</html>
