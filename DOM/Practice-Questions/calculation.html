@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <link rel="stylesheet" href="/AddOn/bootstrap@5.3.1_dist_css_bootstrap.min.css">
+</head>
+<style>
+    .container{
+        margin-top:4vh;
+        background-color: cadetblue;
+        padding:25px 20px;
+    }
+    *{
+        color:whitesmoke;
+        font-size: 1.5rem;
+    }
+    h2{
+        padding:15px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+        text-shadow: 2px 2px 5px bisque;
+    }
+    button{
+        background-color: cornflowerblue;
+        border: none;
+        border-radius: 3px;
+    }
+    button:hover{
+        box-shadow: 2px 2px 15px cornflowerblue;
+    }
+    button[type=reset]{
+        background-color:chocolate;
+    }
+    button[type=reset]:hover{
+        box-shadow: 2px 2px 15px chocolate;
+    }
+    input{
+        color:black;
+        border-radius: 5px;
+        border: none;
+    }
+    input:focus{
+        border:none;
+    }
+    #multiply{
+        margin-bottom:5px;
+    }
+    #show{
+        color:honeydew;
+    }
+</style>
+<body>
+    <form action="" class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Calculation</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <label for="1st">Enter 1st Number: </label>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <input type="number" id="first">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <label for="2nd">Enter 2nd Number: </label>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <input type="number" id="second">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <button type="button" id="add">Add</button>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <button type="button" id="sub">Subtract</button>
+            </div>  
+            <div class="col-md-3 col-sm-6">
+                <button type="button" id="multiply">Multiply</button>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <button type="button" id="divide">Divide</button>
+            </div>            
+        </div><br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="result">Result = <span id="show"></span></p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="reset" id="reset">Reset</button>
+            </div>
+        </div>
+    </form>
+    <script src="calculation.js"></script>
+</body>
+</html>
