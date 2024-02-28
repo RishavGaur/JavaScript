@@ -51,4 +51,5 @@ divi.addEventListener("click", ()=>{
 let reset= document.querySelector("#reset");
 reset.addEventListener("click",()=>{
     document.querySelector("#show").innerText= "";
+    alert("Your Data is going to Reset....\nClick OK to Confirm.");
 })
